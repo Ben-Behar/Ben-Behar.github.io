@@ -1,0 +1,18 @@
+text book matrix:
+    [ near / right         0                      0                                 0              ]
+P = [      0          near / top                  0                                 0              ]
+    [      0               0        -(far + near) / (far - near)    -2 * far * near / (far - near) ]
+    [      0               0                      -1                                0              ]
+
+
+
+The difference in sign is due to the 'handedness' of the system
+The difference in the first two columns is due to where the origin is displayed:
+ - either the center of the screen (OpenGL)
+ - or the corner of the screen (in Class)
+if both were converted to the same handedness and relative origin:
+ - W = 2*right
+ - H = 2*top
+ - D = near    
+ - F = far
+ would produce similar results upon rendering. 
