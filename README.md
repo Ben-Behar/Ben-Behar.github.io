@@ -1,3 +1,3 @@
 # ben-behar.github.io
 My personal github.io pages
-follow this link: [[a link]](ben-behar.github.io)
+follow this link: [[ben-behar.github.io]]
